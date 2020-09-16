@@ -15,6 +15,10 @@ public class Plate {
         this.food -= amount;
     }
 
+    public void refillFood(){
+        food = food + 40;
+    }
+
     @Override
     public String toString() {
         return "Plate{" +

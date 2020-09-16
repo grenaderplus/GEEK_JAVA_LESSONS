@@ -20,13 +20,12 @@ public class MAIN {
 //        testMethod1(z);
 //        testMethod2(x);
 
-          // обертки для типов данных
+        // обертки для типов данных
 //        Byte
 //        Short
 //        Long
 //        Boolean
 //        Character
-
 
 
 //        for (Integer i = 0; i < 1000000; i++) { // объект типа Integer неизменяем - т.е. каждый раз будет создаваться новый объект в пределах цикла
@@ -71,23 +70,53 @@ public class MAIN {
 //        sb.reverse();
 //        System.out.println(sb);
 
-        Cat cat = new Cat("Barsik");
-        Plate plate = new Plate(100);
+//        Cat cat1 = new Cat("Barsik",15 );
 
-        cat.eat(plate);
+        Cat[] cats = {
+                new Cat("Tank", 23),
+                new Cat("Oleo", 15),
+                new Cat("Phlippe", 19),
+                new Cat("Walles", 12)
+        };
 
+        Plate plate = new Plate(25);
+
+        for (int i = 0; i < cats.length; i++) {
+            cats[i].info();
+        }
+
+        for (int i = 0; i < cats.length; i++) {
+            cats[i].eat(plate);
+            cats[i].printStarvingStatus();
+        }
         System.out.println(plate);
 
-        Dog dog = new Dog("Tuzik");
-        dog.scare(cat);
-
+        for (int i = 0; i < cats.length; i++) {
+            if (cats[i].getStarvingStatus() == true) {
+                System.out.println("Plate refilling...");
+                plate.refillFood();
+                System.out.println(plate);
+            }
+        }
     }
 
-    static void testMethod1(int a) {
-        System.out.println(a);
-    }
 
-    static void testMethod2(Integer a) {
-        System.out.println(a);
-    }
+
+//        cat1.info();
+//        cat1.eat(plate);
+//        System.out.println(plate);
+
+//        Dog dog = new Dog("Tuzik");
+//        dog.scare(cat);
+
+
+
+//    static void testMethod1(int a) {
+//        System.out.println(a);
+//    }
+//
+//    static void testMethod2(Integer a) {
+//        System.out.println(a);
+//    }
+
 }
