@@ -1,7 +1,6 @@
-package LESSON_8;
+package JAVA_BASE.LESSON_8;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class GameLogic {
         static int SIZE = 5;

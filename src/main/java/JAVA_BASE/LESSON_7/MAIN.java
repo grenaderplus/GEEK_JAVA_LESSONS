@@ -1,4 +1,4 @@
-package LESSON_7;
+package JAVA_BASE.LESSON_7;
 
 public class MAIN {
     public static void main(String[] args) {
@@ -98,6 +98,8 @@ public class MAIN {
                 System.out.println(plate);
             }
         }
+
+
     }
 
 
