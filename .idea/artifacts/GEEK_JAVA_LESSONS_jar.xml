@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GEEK_JAVA_LESSONS:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GEEK_JAVA_LESSONS_jar</output-path>
+    <root id="archive" name="GEEK_JAVA_LESSONS.jar">
+      <element id="module-output" name="GEEK_JAVA_LESSONS" />
+    </root>
+  </artifact>
+</component>

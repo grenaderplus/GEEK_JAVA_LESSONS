@@ -1,4 +1,4 @@
-package LESSON_7;
+package JAVA_BASE.LESSON_7;
 
 public class Plate {
     private int food;
@@ -13,6 +13,10 @@ public class Plate {
 
     public void decreaseFood(int amount) {
         this.food -= amount;
+    }
+
+    public void refillFood(){
+        food = food + 40;
     }
 
     @Override
